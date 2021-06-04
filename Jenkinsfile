@@ -1,6 +1,7 @@
 pipeline{
-    agent any
-
+  agent {
+    label 'NODEJS'
+  }
     stages {
         stage('Download Dependencies') {
             steps {
