@@ -1,5 +1,5 @@
 @Library('todo') _
-todoshop (
+todo (
          COMPONENT             : 'frontend',
          PROJECT_NAME          : "todo",
          SLAVE_LABEL           : "NGINX",
