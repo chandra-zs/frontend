@@ -1,8 +1,6 @@
-@Library('todo')
+@Library('todo') _
 
 docker (
-         COMPONENT             : 'frontend',
-         PROJECT_NAME          : "todo",
-         SLAVE_LABEL           : "DOCKER"
+        COMPONENT             : 'frontend',
+        PROJECT_NAME          : "todo"
 )
-
