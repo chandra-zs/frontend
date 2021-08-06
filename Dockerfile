@@ -1,7 +1,6 @@
 FROM       node as step1
 RUN        mkdir /app
 WORKDIR    /app
-COPY       server.js .
 COPY       package.json .
 RUN        npm install
 RUN        npm run build
