@@ -2,6 +2,6 @@
 
 docker (
          COMPONENT        :   'frontend',
-         PROJECT_NAME     :    "Todo"
+         PROJECT_NAME     :    "todo"
 )
 
