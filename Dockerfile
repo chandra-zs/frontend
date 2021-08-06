@@ -1,4 +1,13 @@
-FROM        nginx
-RUN         mkdir -p /var/www/html
-COPY        static /var/www/html
-COPY        todo-docker.conf /etc/nginx/conf.d/default.conf
+FROM       node
+RUN        apt install nginx -y
+RUN        mkdir -p /var/www/html
+RUN        mkdir /app
+WORKDIR    /app
+COPY       server.js .
+COPY       package.json .
+RUN        npm install
+RUN        npm run build
+COPY       dist /var/www/html
+COPY       todo-docker.conf /etc/nginx/conf.d/default.conf
+CMD        ["npm","start"]
+
