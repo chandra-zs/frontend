@@ -1,5 +1,5 @@
 FROM       node
-RUN        apt install nginx -y
+RUN        apt-get install nginx -y
 RUN        mkdir -p /var/www/html
 RUN        mkdir /app
 WORKDIR    /app
