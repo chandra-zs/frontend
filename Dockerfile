@@ -1,6 +1,6 @@
 FROM       node:10-alpine as builder
 RUN        mkdir /app
-COPY       . .
+COPY       package.json .
 RUN        npm install
 WORKDIR    /app
 COPY       . .
